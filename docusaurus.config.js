@@ -14,11 +14,11 @@ const config = {
   url: 'https://Malaikaali2.github.io', // Replace with your GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages user sites, it is often '/<username>.github.io/<repo-name>'
-  baseUrl: '/ai-native-book/', // Adjust this to match your repository name
+  baseUrl: '/hackathon-book/', // Adjust this to match your repository name
 
   // GitHub pages deployment config.
   organizationName: 'Malaikaali2', // Usually your GitHub org/user name.
-  projectName: 'ai-native-book', // Usually your repo name.
+  projectName: 'hackathon-book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
