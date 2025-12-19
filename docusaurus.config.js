@@ -14,11 +14,11 @@ const config = {
   url: 'https://Malaikaali2.github.io', // Replace with your GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages user sites, it is often '/<username>.github.io/<repo-name>'
-  baseUrl: '/hackathon-book/', // Adjust this to match your repository name
+  baseUrl: '/Book-ai-native/', // Adjust this to match your repository name
 
   // GitHub pages deployment config.
   organizationName: 'Malaikaali2', // Usually your GitHub org/user name.
-  projectName: 'hackathon-book', // Usually your repo name.
+  projectName: 'Book-ai-native', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,7 +41,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Malaikaali2/ai-native-book/tree/main/',
+            'https://github.com/Malaikaali2/Book-ai-native/tree/main/',
         },
         blog: false, // Disable blog functionality
         theme: {
@@ -70,7 +70,7 @@ const config = {
             label: 'Book Content',
           },
           {
-            href: 'https://github.com/Malaikaali2/ai-native-book',
+            href: 'https://github.com/Malaikaali2/Book-ai-native',
             label: 'GitHub',
             position: 'right',
           },
