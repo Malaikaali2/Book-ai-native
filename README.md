@@ -40,3 +40,5 @@ This project uses Docusaurus for documentation generation and is deployed via Gi
 ## Contributing
 
 Please follow the academic rigor standards defined in the project constitution when contributing content.
+
+*Site deployed at: https://Malaikaali2.github.io/Book-ai-native/*
