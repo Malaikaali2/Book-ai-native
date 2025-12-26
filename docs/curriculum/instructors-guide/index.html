@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-curriculum/instructors-guide" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Instructor&#x27;s Guide: Physical AI &amp; Humanoid Robotics Course | Physical AI &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Malaikaali2.github.io/Book-ai-native/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://Malaikaali2.github.io/Book-ai-native/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://Malaikaali2.github.io/Book-ai-native/docs/curriculum/instructors-guide"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Instructor&#x27;s Guide: Physical AI &amp; Humanoid Robotics Course | Physical AI &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Course Overview"><meta data-rh="true" property="og:description" content="Course Overview"><link data-rh="true" rel="icon" href="/Book-ai-native/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Malaikaali2.github.io/Book-ai-native/docs/curriculum/instructors-guide"><link data-rh="true" rel="alternate" href="https://Malaikaali2.github.io/Book-ai-native/docs/curriculum/instructors-guide" hreflang="en"><link data-rh="true" rel="alternate" href="https://Malaikaali2.github.io/Book-ai-native/docs/curriculum/instructors-guide" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Instructor's Guide: Physical AI & Humanoid Robotics Course","item":"https://Malaikaali2.github.io/Book-ai-native/docs/curriculum/instructors-guide"}]}</script><link rel="stylesheet" href="/Book-ai-native/assets/css/styles.5d942bad.css">
+<script src="/Book-ai-native/assets/js/runtime~main.bf8433f0.js" defer="defer"></script>
+<script src="/Book-ai-native/assets/js/main.ff1c51be.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Book-ai-native/"><div class="navbar__logo"><img src="/Book-ai-native/img/book-logo.svg" alt="Physical AI &amp; Humanoid Robotics Book" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Book-ai-native/img/book-logo.svg" alt="Physical AI &amp; Humanoid Robotics Book" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Humanoid Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Book-ai-native/docs/intro">Book Content</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Malaikaali2/Book-ai-native" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/intro"><span title="Introduction to Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">Introduction to Physical AI &amp; Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/terminology-consistency"><span title="Terminology Consistency Guide" class="linkLabel_WmDU">Terminology Consistency Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/cross-references"><span title="Cross-References Between Related Concepts" class="linkLabel_WmDU">Cross-References Between Related Concepts</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/navigation-aids"><span title="Navigation Aids and Study Guides" class="linkLabel_WmDU">Navigation Aids and Study Guides</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/proofreading-guide"><span title="Proofreading and Copyediting Guide" class="linkLabel_WmDU">Proofreading and Copyediting Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/figures-diagrams"><span title="Figures, Diagrams, and Illustrations Guide" class="linkLabel_WmDU">Figures, Diagrams, and Illustrations Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/final-proofreading"><span title="Final Proofreading and Copyediting Report" class="linkLabel_WmDU">Final Proofreading and Copyediting Report</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/deployment-packaging"><span title="Deployment and Packaging Guide" class="linkLabel_WmDU">Deployment and Packaging Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/citation-validation"><span title="Citation and Reference Validation Report" class="linkLabel_WmDU">Citation and Reference Validation Report</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/final-delivery"><span title="Final Delivery and Deployment Documentation" class="linkLabel_WmDU">Final Delivery and Deployment Documentation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/SUMMARY"><span title="Physical AI &amp; Humanoid Robotics: Complete Book Summary" class="linkLabel_WmDU">Physical AI &amp; Humanoid Robotics: Complete Book Summary</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Book-ai-native/docs/appendices/intro"><span title="appendices" class="categoryLinkLabel_W154">appendices</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Book-ai-native/docs/capstone/intro"><span title="capstone" class="categoryLinkLabel_W154">capstone</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Book-ai-native/docs/curriculum/overview"><span title="curriculum" class="categoryLinkLabel_W154">curriculum</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/overview"><span title="13-Week Curriculum Overview: Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">13-Week Curriculum Overview: Physical AI &amp; Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/weekly-objectives"><span title="Weekly Learning Objectives: Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">Weekly Learning Objectives: Physical AI &amp; Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/tools-requirements"><span title="Tools and Software Requirements: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Tools and Software Requirements: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/labs-assignments"><span title="Lab and Assignment Descriptions: Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">Lab and Assignment Descriptions: Physical AI &amp; Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/assessment-rubrics"><span title="Assessment Rubrics: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Assessment Rubrics: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Book-ai-native/docs/curriculum/instructors-guide"><span title="Instructor&#x27;s Guide: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Instructor&#x27;s Guide: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/prerequisites"><span title="Prerequisites: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Prerequisites: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/knowledge-outcomes"><span title="Knowledge Outcomes: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Knowledge Outcomes: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/skill-outcomes"><span title="Skill Outcomes: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Skill Outcomes: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/competency-outcomes"><span title="Competency Outcomes: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Competency Outcomes: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/curriculum-integration"><span title="Curriculum Integration: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Curriculum Integration: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/implementation-guide"><span title="Implementation Guide: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Implementation Guide: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/ros-project-assessment"><span title="ROS 2 Package Project Assessment: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">ROS 2 Package Project Assessment: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/gazebo-assessment"><span title="Gazebo Simulation Assessment: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Gazebo Simulation Assessment: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/technical-setup"><span title="Technical Setup Guide: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Technical Setup Guide: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/isaac-assessment"><span title="Isaac Perception Pipeline Assessment: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Isaac Perception Pipeline Assessment: Physical AI &amp; Humanoid Robotics Course</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Book-ai-native/docs/curriculum/testing-validation"><span title="Testing and Validation Guide: Physical AI &amp; Humanoid Robotics Course" class="linkLabel_WmDU">Testing and Validation Guide: Physical AI &amp; Humanoid Robotics Course</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Book-ai-native/docs/module-1-ros/intro"><span title="module-1-ros" class="categoryLinkLabel_W154">module-1-ros</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Book-ai-native/docs/module-2-digital-twin/intro"><span title="module-2-digital-twin" class="categoryLinkLabel_W154">module-2-digital-twin</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Book-ai-native/docs/module-3-ai-brain/intro"><span title="module-3-ai-brain" class="categoryLinkLabel_W154">module-3-ai-brain</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Book-ai-native/docs/module-4-vla/intro"><span title="module-4-vla" class="categoryLinkLabel_W154">module-4-vla</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Book-ai-native/docs/references/"><span title="Comprehensive Reference List" class="linkLabel_WmDU">Comprehensive Reference List</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><span class="breadcrumbs__link">curriculum</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Instructor&#x27;s Guide: Physical AI &amp; Humanoid Robotics Course</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Instructor&#x27;s Guide: Physical AI &amp; Humanoid Robotics Course</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-overview">Course Overview<a href="#course-overview" class="hash-link" aria-label="Direct link to Course Overview" title="Direct link to Course Overview" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-information">Course Information<a href="#course-information" class="hash-link" aria-label="Direct link to Course Information" title="Direct link to Course Information" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Course Title</strong>: Physical AI &amp; Humanoid Robotics: Embodied Intelligence, Simulation-to-Reality Workflows, and Modern AI-Robot Integration</li>
+<li class=""><strong>Duration</strong>: 13 weeks (Semester-long course)</li>
+<li class=""><strong>Credit Hours</strong>: 3-4 credit hours</li>
+<li class=""><strong>Prerequisites</strong>: Basic programming knowledge, linear algebra, introductory machine learning</li>
+<li class=""><strong>Class Size</strong>: Recommended 10-30 students</li>
+<li class=""><strong>Format</strong>: Lecture + Hands-on Lab sessions (3 hours lecture, 3 hours lab per week)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-philosophy">Course Philosophy<a href="#course-philosophy" class="hash-link" aria-label="Direct link to Course Philosophy" title="Direct link to Course Philosophy" translate="no">​</a></h3>
+<p>This course emphasizes hands-on learning through project-based instruction. Students learn by building, simulating, and deploying complete robotic systems that integrate modern AI techniques with physical robot platforms. The curriculum progresses from fundamental ROS 2 concepts through advanced AI integration, culminating in autonomous humanoid systems.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-approach">Learning Approach<a href="#learning-approach" class="hash-link" aria-label="Direct link to Learning Approach" title="Direct link to Learning Approach" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Active Learning</strong>: 60% of class time devoted to hands-on lab work</li>
+<li class=""><strong>Project-Based</strong>: Progressive projects building toward complete systems</li>
+<li class=""><strong>Collaborative</strong>: Pair programming and group projects</li>
+<li class=""><strong>Industry-Relevant</strong>: Real-world problems and datasets</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="instructor-preparation">Instructor Preparation<a href="#instructor-preparation" class="hash-link" aria-label="Direct link to Instructor Preparation" title="Direct link to Instructor Preparation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites-for-instructors">Prerequisites for Instructors<a href="#prerequisites-for-instructors" class="hash-link" aria-label="Direct link to Prerequisites for Instructors" title="Direct link to Prerequisites for Instructors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Technical Skills</strong>: Experience with ROS 2, robotics systems, and AI/ML for robotics</li>
+<li class=""><strong>Domain Knowledge</strong>: Understanding of simulation environments, perception, and control systems</li>
+<li class=""><strong>Pedagogical Skills</strong>: Experience with active learning and project-based instruction</li>
+<li class=""><strong>Software Proficiency</strong>: Comfort with Python, C++, Docker, and development tools</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pre-course-setup">Pre-Course Setup<a href="#pre-course-setup" class="hash-link" aria-label="Direct link to Pre-Course Setup" title="Direct link to Pre-Course Setup" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Environment Preparation</strong>: Set up development environment with all required tools</li>
+<li class=""><strong>Hardware Setup</strong>: Configure lab equipment and robot platforms</li>
+<li class=""><strong>Content Review</strong>: Review all course materials and prepare demonstrations</li>
+<li class=""><strong>Assessment Preparation</strong>: Set up grading systems and rubrics</li>
+<li class=""><strong>Student Prerequisites</strong>: Verify student background knowledge</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="required-resources">Required Resources<a href="#required-resources" class="hash-link" aria-label="Direct link to Required Resources" title="Direct link to Required Resources" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Computers</strong>: Workstations with NVIDIA GPUs (RTX 3080 or equivalent)</li>
+<li class=""><strong>Robots</strong>: TurtleBot3 or similar platforms (1 per 2-3 students)</li>
+<li class=""><strong>Sensors</strong>: IMU, LiDAR, cameras for hands-on work</li>
+<li class=""><strong>Network</strong>: Reliable WiFi for robot communication</li>
+<li class=""><strong>Space</strong>: Adequate lab space for robot operation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="weekly-teaching-schedule">Weekly Teaching Schedule<a href="#weekly-teaching-schedule" class="hash-link" aria-label="Direct link to Weekly Teaching Schedule" title="Direct link to Weekly Teaching Schedule" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="typical-weekly-structure">Typical Weekly Structure<a href="#typical-weekly-structure" class="hash-link" aria-label="Direct link to Typical Weekly Structure" title="Direct link to Typical Weekly Structure" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Monday</strong>: Lecture (3 hours) - Theory and demonstrations</li>
+<li class=""><strong>Wednesday</strong>: Lab Session (3 hours) - Hands-on implementation</li>
+<li class=""><strong>Friday</strong>: Lab Session (3 hours) - Project work and peer review</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-1-ros-2-fundamentals-and-architecture">Week 1: ROS 2 Fundamentals and Architecture<a href="#week-1-ros-2-fundamentals-and-architecture" class="hash-link" aria-label="Direct link to Week 1: ROS 2 Fundamentals and Architecture" title="Direct link to Week 1: ROS 2 Fundamentals and Architecture" translate="no">​</a></h3>
+<p><strong>Lecture Topics (Monday)</strong>:</p>
+<ul>
+<li class="">ROS 2 architecture and communication patterns</li>
+<li class="">Nodes, topics, services, and actions</li>
+<li class="">Message types and communication design patterns</li>
+<li class="">Introduction to robotics software engineering</li>
+</ul>
+<p><strong>Lab Session 1 (Wednesday)</strong>:</p>
+<ul>
+<li class="">ROS 2 installation and environment setup</li>
+<li class="">Basic package creation and structure</li>
+<li class="">Publisher-subscriber implementation</li>
+<li class="">Introduction to ROS tools (rqt, ros2 cli)</li>
+</ul>
+<p><strong>Lab Session 2 (Friday)</strong>:</p>
+<ul>
+<li class="">Advanced ROS 2 concepts (parameters, services, actions)</li>
+<li class="">Navigation stack introduction</li>
+<li class="">Lab 1A completion and peer review</li>
+<li class="">Troubleshooting and debugging techniques</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Start with simple examples and gradually increase complexity</li>
+<li class="">Emphasize proper package structure from the beginning</li>
+<li class="">Provide plenty of debugging examples and techniques</li>
+<li class="">Use visual tools to help students understand communication patterns</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-2-advanced-ros-2-concepts-and-navigation">Week 2: Advanced ROS 2 Concepts and Navigation<a href="#week-2-advanced-ros-2-concepts-and-navigation" class="hash-link" aria-label="Direct link to Week 2: Advanced ROS 2 Concepts and Navigation" title="Direct link to Week 2: Advanced ROS 2 Concepts and Navigation" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Navigation stack architecture and components</li>
+<li class="">Costmap configuration and obstacle handling</li>
+<li class="">Path planning algorithms and controllers</li>
+<li class="">Integration with sensor systems</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Costmap configuration and testing</li>
+<li class="">Path planner setup and tuning</li>
+<li class="">Controller integration and testing</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Complete navigation system integration</li>
+<li class="">Testing in simulation environment</li>
+<li class="">Performance evaluation and parameter tuning</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of parameter tuning</li>
+<li class="">Use visualization tools to help students understand navigation</li>
+<li class="">Provide clear examples of common navigation issues and solutions</li>
+<li class="">Encourage systematic parameter optimization approaches</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-3-sensor-fusion-and-system-debugging">Week 3: Sensor Fusion and System Debugging<a href="#week-3-sensor-fusion-and-system-debugging" class="hash-link" aria-label="Direct link to Week 3: Sensor Fusion and System Debugging" title="Direct link to Week 3: Sensor Fusion and System Debugging" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Sensor fusion principles and techniques</li>
+<li class="">Kalman filtering and state estimation</li>
+<li class="">Multi-sensor integration and synchronization</li>
+<li class="">System debugging and profiling</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">IMU and odometry fusion implementation</li>
+<li class="">Multi-sensor integration techniques</li>
+<li class="">Sensor message synchronization</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">System debugging with ROS tools</li>
+<li class="">Performance profiling and optimization</li>
+<li class="">Lab 3A completion and evaluation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Start with simple fusion examples before complex systems</li>
+<li class="">Emphasize the importance of sensor calibration</li>
+<li class="">Provide systematic debugging methodologies</li>
+<li class="">Use real-world examples of sensor fusion applications</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-4-gazebo-simulation-and-physics-modeling">Week 4: Gazebo Simulation and Physics Modeling<a href="#week-4-gazebo-simulation-and-physics-modeling" class="hash-link" aria-label="Direct link to Week 4: Gazebo Simulation and Physics Modeling" title="Direct link to Week 4: Gazebo Simulation and Physics Modeling" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Gazebo physics engine and simulation principles</li>
+<li class="">URDF and robot modeling</li>
+<li class="">Sensor simulation and plugin systems</li>
+<li class="">Simulation-to-reality transfer concepts</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Custom robot model creation with URDF</li>
+<li class="">Gazebo integration and physics configuration</li>
+<li class="">Sensor addition and testing</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Custom world creation and environment design</li>
+<li class="">Simulation testing and validation</li>
+<li class="">Reality gap analysis techniques</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of accurate physical modeling</li>
+<li class="">Show examples of simulation vs. reality differences</li>
+<li class="">Provide templates and examples for common robot models</li>
+<li class="">Discuss best practices for simulation design</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-5-advanced-simulation-and-reality-transfer">Week 5: Advanced Simulation and Reality Transfer<a href="#week-5-advanced-simulation-and-reality-transfer" class="hash-link" aria-label="Direct link to Week 5: Advanced Simulation and Reality Transfer" title="Direct link to Week 5: Advanced Simulation and Reality Transfer" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Domain randomization and synthetic data generation</li>
+<li class="">Reality gap analysis and minimization</li>
+<li class="">Simulation optimization techniques</li>
+<li class="">Transfer learning for robotics</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Domain randomization implementation</li>
+<li class="">Synthetic data generation techniques</li>
+<li class="">Reality gap measurement and analysis</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Transfer learning experiments</li>
+<li class="">Performance evaluation and comparison</li>
+<li class="">Lab 5A completion and documentation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Explain the importance of simulation quality for real-world transfer</li>
+<li class="">Provide examples of successful and unsuccessful transfer</li>
+<li class="">Emphasize the iterative nature of simulation improvement</li>
+<li class="">Discuss the trade-offs between simulation fidelity and performance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-6-nvidia-isaac-platform-and-perception-pipelines">Week 6: NVIDIA Isaac Platform and Perception Pipelines<a href="#week-6-nvidia-isaac-platform-and-perception-pipelines" class="hash-link" aria-label="Direct link to Week 6: NVIDIA Isaac Platform and Perception Pipelines" title="Direct link to Week 6: NVIDIA Isaac Platform and Perception Pipelines" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Isaac ROS architecture and packages</li>
+<li class="">GPU-accelerated perception systems</li>
+<li class="">Neural network deployment and optimization</li>
+<li class="">Isaac-ROS integration patterns</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Isaac platform setup and configuration</li>
+<li class="">Basic perception pipeline implementation</li>
+<li class="">GPU optimization techniques</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Complete perception system integration</li>
+<li class="">Performance benchmarking and optimization</li>
+<li class="">Lab 6A completion and evaluation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of GPU utilization for robotics</li>
+<li class="">Provide clear examples of performance improvements</li>
+<li class="">Discuss the trade-offs between accuracy and speed</li>
+<li class="">Show real-world examples of Isaac applications</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-7-neural-network-optimization-and-path-planning">Week 7: Neural Network Optimization and Path Planning<a href="#week-7-neural-network-optimization-and-path-planning" class="hash-link" aria-label="Direct link to Week 7: Neural Network Optimization and Path Planning" title="Direct link to Week 7: Neural Network Optimization and Path Planning" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Neural network optimization techniques (TensorRT, quantization)</li>
+<li class="">Path planning algorithms and optimization</li>
+<li class="">Real-time performance considerations</li>
+<li class="">Hardware acceleration for robotics</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Model optimization with TensorRT</li>
+<li class="">Quantization and model compression</li>
+<li class="">Performance benchmarking</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Path planning algorithm implementation</li>
+<li class="">Optimization and performance analysis</li>
+<li class="">Lab 7A completion and documentation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of real-time performance in robotics</li>
+<li class="">Provide practical examples of optimization techniques</li>
+<li class="">Discuss the trade-offs between accuracy and speed</li>
+<li class="">Show the impact of optimization on real robot performance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-8-manipulation-control-and-gpu-optimization">Week 8: Manipulation Control and GPU Optimization<a href="#week-8-manipulation-control-and-gpu-optimization" class="hash-link" aria-label="Direct link to Week 8: Manipulation Control and GPU Optimization" title="Direct link to Week 8: Manipulation Control and GPU Optimization" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Manipulation control systems and inverse kinematics</li>
+<li class="">Force control and tactile feedback</li>
+<li class="">GPU optimization for robotics algorithms</li>
+<li class="">Integration of perception and manipulation</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Manipulation system setup and configuration</li>
+<li class="">Inverse kinematics implementation</li>
+<li class="">Perception-action integration</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">GPU acceleration for manipulation algorithms</li>
+<li class="">Performance optimization and testing</li>
+<li class="">Lab 8A completion and evaluation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of safe manipulation</li>
+<li class="">Provide examples of successful manipulation systems</li>
+<li class="">Discuss the challenges of dexterous manipulation</li>
+<li class="">Show the benefits of GPU acceleration for manipulation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-9-isaac-perception-system-integration">Week 9: Isaac Perception System Integration<a href="#week-9-isaac-perception-system-integration" class="hash-link" aria-label="Direct link to Week 9: Isaac Perception System Integration" title="Direct link to Week 9: Isaac Perception System Integration" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Complete Isaac perception system design</li>
+<li class="">Multi-sensor integration and fusion</li>
+<li class="">Real-time system optimization</li>
+<li class="">Edge deployment considerations</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Multi-sensor Isaac integration</li>
+<li class="">Real-time performance optimization</li>
+<li class="">System validation and testing</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Edge deployment preparation</li>
+<li class="">Performance evaluation and optimization</li>
+<li class="">Lab 9A completion and documentation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of system integration</li>
+<li class="">Provide examples of complete perception systems</li>
+<li class="">Discuss the challenges of real-time perception</li>
+<li class="">Show the path from development to deployment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-10-multimodal-embeddings-and-instruction-following">Week 10: Multimodal Embeddings and Instruction Following<a href="#week-10-multimodal-embeddings-and-instruction-following" class="hash-link" aria-label="Direct link to Week 10: Multimodal Embeddings and Instruction Following" title="Direct link to Week 10: Multimodal Embeddings and Instruction Following" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Multimodal embeddings and representation learning</li>
+<li class="">Vision-language-action integration</li>
+<li class="">Instruction following and task planning</li>
+<li class="">Cross-modal grounding techniques</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Multimodal embedding implementation</li>
+<li class="">Cross-modal alignment techniques</li>
+<li class="">Instruction parsing and grounding</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Complete instruction following system</li>
+<li class="">Testing and evaluation</li>
+<li class="">Lab 10A completion and documentation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Explain the importance of multimodal integration for robotics</li>
+<li class="">Provide examples of successful VLA systems</li>
+<li class="">Discuss the challenges of language grounding</li>
+<li class="">Show the connection between language and action</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-11-embodied-language-models-and-action-grounding">Week 11: Embodied Language Models and Action Grounding<a href="#week-11-embodied-language-models-and-action-grounding" class="hash-link" aria-label="Direct link to Week 11: Embodied Language Models and Action Grounding" title="Direct link to Week 11: Embodied Language Models and Action Grounding" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Embodied cognition and language grounding</li>
+<li class="">Training embodied language models</li>
+<li class="">Action grounding and execution</li>
+<li class="">Learning from physical interaction</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Embodied language model training</li>
+<li class="">Action grounding implementation</li>
+<li class="">Physical interaction simulation</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Complete embodied system integration</li>
+<li class="">Testing and evaluation</li>
+<li class="">Lab 11A completion and documentation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of physical experience for language understanding</li>
+<li class="">Provide examples of embodied learning systems</li>
+<li class="">Discuss the challenges of grounding abstract concepts</li>
+<li class="">Show the connection between perception and action</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-12-voice-command-interpretation-and-nlp-mapping">Week 12: Voice Command Interpretation and NLP Mapping<a href="#week-12-voice-command-interpretation-and-nlp-mapping" class="hash-link" aria-label="Direct link to Week 12: Voice Command Interpretation and NLP Mapping" title="Direct link to Week 12: Voice Command Interpretation and NLP Mapping" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Speech recognition and processing for robotics</li>
+<li class="">Natural language to action mapping</li>
+<li class="">Voice command interpretation systems</li>
+<li class="">Real-time voice processing</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Voice command system setup</li>
+<li class="">Speech recognition and processing</li>
+<li class="">Natural language processing pipeline</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Voice-to-action mapping implementation</li>
+<li class="">Real-time processing and testing</li>
+<li class="">Lab 12A completion and evaluation</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of real-time processing for voice interfaces</li>
+<li class="">Provide examples of successful voice-controlled robots</li>
+<li class="">Discuss the challenges of speech recognition in robotics</li>
+<li class="">Show the integration with existing systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-13-capstone-integration-and-evaluation">Week 13: Capstone Integration and Evaluation<a href="#week-13-capstone-integration-and-evaluation" class="hash-link" aria-label="Direct link to Week 13: Capstone Integration and Evaluation" title="Direct link to Week 13: Capstone Integration and Evaluation" translate="no">​</a></h3>
+<p><strong>Lecture Topics</strong>:</p>
+<ul>
+<li class="">Complete system integration strategies</li>
+<li class="">Performance evaluation and optimization</li>
+<li class="">Deployment considerations</li>
+<li class="">Future directions in robotics</li>
+</ul>
+<p><strong>Lab Session 1</strong>:</p>
+<ul>
+<li class="">Component integration and testing</li>
+<li class="">System optimization and debugging</li>
+<li class="">Performance evaluation</li>
+</ul>
+<p><strong>Lab Session 2</strong>:</p>
+<ul>
+<li class="">Final system demonstration</li>
+<li class="">Peer review and feedback</li>
+<li class="">Course reflection and next steps</li>
+</ul>
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li class="">Emphasize the importance of integration testing</li>
+<li class="">Provide guidance for systematic debugging</li>
+<li class="">Encourage students to reflect on their learning</li>
+<li class="">Discuss career paths and further learning opportunities</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="classroom-management-strategies">Classroom Management Strategies<a href="#classroom-management-strategies" class="hash-link" aria-label="Direct link to Classroom Management Strategies" title="Direct link to Classroom Management Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="active-learning-techniques">Active Learning Techniques<a href="#active-learning-techniques" class="hash-link" aria-label="Direct link to Active Learning Techniques" title="Direct link to Active Learning Techniques" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Think-Pair-Share</strong>: Students think individually, discuss with partner, share with class</li>
+<li class=""><strong>Peer Instruction</strong>: Students vote on concepts, discuss, then vote again</li>
+<li class=""><strong>Problem-Based Learning</strong>: Real-world problems that drive learning</li>
+<li class=""><strong>Just-in-Time Teaching</strong>: Students prepare before class, in-class time for application</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="group-formation">Group Formation<a href="#group-formation" class="hash-link" aria-label="Direct link to Group Formation" title="Direct link to Group Formation" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Homogeneous Groups</strong>: Students with similar backgrounds and skills</li>
+<li class=""><strong>Heterogeneous Groups</strong>: Mix of backgrounds and skill levels</li>
+<li class=""><strong>Random Groups</strong>: Rotate to encourage broader networking</li>
+<li class=""><strong>Self-Selected Groups</strong>: Students choose based on interests</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="engagement-strategies">Engagement Strategies<a href="#engagement-strategies" class="hash-link" aria-label="Direct link to Engagement Strategies" title="Direct link to Engagement Strategies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Real-World Connections</strong>: Connect concepts to current robotics applications</li>
+<li class=""><strong>Interactive Demonstrations</strong>: Live coding and robot demonstrations</li>
+<li class=""><strong>Gamification</strong>: Challenges and competitions to motivate learning</li>
+<li class=""><strong>Reflection Activities</strong>: Regular self-assessment and goal-setting</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="assessment-strategies">Assessment Strategies<a href="#assessment-strategies" class="hash-link" aria-label="Direct link to Assessment Strategies" title="Direct link to Assessment Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="formative-assessment">Formative Assessment<a href="#formative-assessment" class="hash-link" aria-label="Direct link to Formative Assessment" title="Direct link to Formative Assessment" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Daily Check-ins</strong>: Quick polls or questions about previous day&#x27;s content</li>
+<li class=""><strong>Peer Review</strong>: Students review each other&#x27;s code and projects</li>
+<li class=""><strong>Coding Dojos</strong>: Collaborative problem-solving sessions</li>
+<li class=""><strong>Technical Discussions</strong>: In-depth conversations about concepts</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="summative-assessment">Summative Assessment<a href="#summative-assessment" class="hash-link" aria-label="Direct link to Summative Assessment" title="Direct link to Summative Assessment" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Labs</strong>: Hands-on implementation with specific deliverables</li>
+<li class=""><strong>Projects</strong>: Longer-term assignments building complex systems</li>
+<li class=""><strong>Exams</strong>: Conceptual understanding and problem-solving</li>
+<li class=""><strong>Portfolios</strong>: Collection of work demonstrating learning progression</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="authentic-assessment">Authentic Assessment<a href="#authentic-assessment" class="hash-link" aria-label="Direct link to Authentic Assessment" title="Direct link to Authentic Assessment" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Industry Problems</strong>: Real-world challenges from robotics companies</li>
+<li class=""><strong>Client Projects</strong>: Working with external partners on actual problems</li>
+<li class=""><strong>Competitions</strong>: Participating in robotics challenges and contests</li>
+<li class=""><strong>Research Projects</strong>: Contributing to ongoing research efforts</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="student-support-strategies">Student Support Strategies<a href="#student-support-strategies" class="hash-link" aria-label="Direct link to Student Support Strategies" title="Direct link to Student Support Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="differentiated-instruction">Differentiated Instruction<a href="#differentiated-instruction" class="hash-link" aria-label="Direct link to Differentiated Instruction" title="Direct link to Differentiated Instruction" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Multiple Entry Points</strong>: Support for students with varying backgrounds</li>
+<li class=""><strong>Flexible Pacing</strong>: Accommodation for different learning speeds</li>
+<li class=""><strong>Varied Assessment</strong>: Multiple ways to demonstrate understanding</li>
+<li class=""><strong>Extension Opportunities</strong>: Advanced challenges for motivated students</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scaffolding-techniques">Scaffolding Techniques<a href="#scaffolding-techniques" class="hash-link" aria-label="Direct link to Scaffolding Techniques" title="Direct link to Scaffolding Techniques" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Graduated Complexity</strong>: Problems that build in difficulty</li>
+<li class=""><strong>Template Provision</strong>: Starting points for complex implementations</li>
+<li class=""><strong>Step-by-Step Guidance</strong>: Detailed instructions for beginners</li>
+<li class=""><strong>Progressive Independence</strong>: Gradual removal of support as skills develop</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="remediation-strategies">Remediation Strategies<a href="#remediation-strategies" class="hash-link" aria-label="Direct link to Remediation Strategies" title="Direct link to Remediation Strategies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Diagnostic Assessments</strong>: Identify specific areas of weakness</li>
+<li class=""><strong>Targeted Interventions</strong>: Focused support for specific concepts</li>
+<li class=""><strong>Peer Tutoring</strong>: Pair stronger students with those needing support</li>
+<li class=""><strong>Alternative Explanations</strong>: Multiple approaches to difficult concepts</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technology-integration">Technology Integration<a href="#technology-integration" class="hash-link" aria-label="Direct link to Technology Integration" title="Direct link to Technology Integration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="online-components">Online Components<a href="#online-components" class="hash-link" aria-label="Direct link to Online Components" title="Direct link to Online Components" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>LMS Integration</strong>: Course management and assignment submission</li>
+<li class=""><strong>Video Content</strong>: Recorded lectures and demonstrations</li>
+<li class=""><strong>Online Labs</strong>: Cloud-based development environments</li>
+<li class=""><strong>Discussion Forums</strong>: Peer interaction and support</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-integration">Hardware Integration<a href="#hardware-integration" class="hash-link" aria-label="Direct link to Hardware Integration" title="Direct link to Hardware Integration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Bring Your Own Device</strong>: Students use personal laptops with required software</li>
+<li class=""><strong>Shared Equipment</strong>: Lab computers with specialized hardware</li>
+<li class=""><strong>Remote Access</strong>: Access to robots and specialized equipment remotely</li>
+<li class=""><strong>Virtual Environments</strong>: Simulation for students without hardware access</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="accessibility-considerations">Accessibility Considerations<a href="#accessibility-considerations" class="hash-link" aria-label="Direct link to Accessibility Considerations" title="Direct link to Accessibility Considerations" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Screen Readers</strong>: Ensure documentation is accessible</li>
+<li class=""><strong>Alternative Formats</strong>: Provide content in multiple formats</li>
+<li class=""><strong>Flexible Scheduling</strong>: Accommodate different student needs</li>
+<li class=""><strong>Assistive Technology</strong>: Support for students with disabilities</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="assessment-and-grading">Assessment and Grading<a href="#assessment-and-grading" class="hash-link" aria-label="Direct link to Assessment and Grading" title="Direct link to Assessment and Grading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rubric-development">Rubric Development<a href="#rubric-development" class="hash-link" aria-label="Direct link to Rubric Development" title="Direct link to Rubric Development" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Specific Criteria</strong>: Clear, measurable performance indicators</li>
+<li class=""><strong>Multiple Levels</strong>: Different performance levels with clear descriptions</li>
+<li class=""><strong>Consistent Application</strong>: Training for consistent grading</li>
+<li class=""><strong>Student Involvement</strong>: Student input in rubric development</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="feedback-strategies">Feedback Strategies<a href="#feedback-strategies" class="hash-link" aria-label="Direct link to Feedback Strategies" title="Direct link to Feedback Strategies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Timely Feedback</strong>: Return assignments within specified timeframe</li>
+<li class=""><strong>Specific Comments</strong>: Detailed, actionable feedback</li>
+<li class=""><strong>Positive Reinforcement</strong>: Acknowledge strengths as well as weaknesses</li>
+<li class=""><strong>Growth Orientation</strong>: Focus on improvement and learning</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="grade-calculation">Grade Calculation<a href="#grade-calculation" class="hash-link" aria-label="Direct link to Grade Calculation" title="Direct link to Grade Calculation" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Weighted Components</strong>: Different categories with appropriate weights</li>
+<li class=""><strong>Curve Consideration</strong>: Adjust for difficulty and fairness</li>
+<li class=""><strong>Extra Credit</strong>: Opportunities for additional learning</li>
+<li class=""><strong>Late Policy</strong>: Fair but consistent approach to late work</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-logistics">Course Logistics<a href="#course-logistics" class="hash-link" aria-label="Direct link to Course Logistics" title="Direct link to Course Logistics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="schedule-management">Schedule Management<a href="#schedule-management" class="hash-link" aria-label="Direct link to Schedule Management" title="Direct link to Schedule Management" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Flexible Deadlines</strong>: Accommodate different learning paces</li>
+<li class=""><strong>Milestone Checkpoints</strong>: Regular progress assessments</li>
+<li class=""><strong>Buffer Time</strong>: Account for technical difficulties</li>
+<li class=""><strong>Backup Plans</strong>: Alternative activities for technical failures</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-management">Resource Management<a href="#resource-management" class="hash-link" aria-label="Direct link to Resource Management" title="Direct link to Resource Management" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Equipment Checkout</strong>: System for borrowing specialized equipment</li>
+<li class=""><strong>Software Licenses</strong>: Ensure access to required tools</li>
+<li class=""><strong>Lab Hours</strong>: Extended hours for project work</li>
+<li class=""><strong>Technical Support</strong>: Availability of help for technical issues</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="communication-protocols">Communication Protocols<a href="#communication-protocols" class="hash-link" aria-label="Direct link to Communication Protocols" title="Direct link to Communication Protocols" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Email Policy</strong>: Clear expectations for communication</li>
+<li class=""><strong>Office Hours</strong>: Regular availability for individual support</li>
+<li class=""><strong>Emergency Procedures</strong>: Plans for technical failures</li>
+<li class=""><strong>Feedback Channels</strong>: Multiple ways for students to seek help</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="professional-development">Professional Development<a href="#professional-development" class="hash-link" aria-label="Direct link to Professional Development" title="Direct link to Professional Development" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="staying-current">Staying Current<a href="#staying-current" class="hash-link" aria-label="Direct link to Staying Current" title="Direct link to Staying Current" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Conference Attendance</strong>: Robotics and AI conferences</li>
+<li class=""><strong>Research Reading</strong>: Current papers and developments</li>
+<li class=""><strong>Industry Connections</strong>: Networking with practitioners</li>
+<li class=""><strong>Online Learning</strong>: Continuous skill development</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="teaching-improvement">Teaching Improvement<a href="#teaching-improvement" class="hash-link" aria-label="Direct link to Teaching Improvement" title="Direct link to Teaching Improvement" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Student Feedback</strong>: Regular collection and analysis</li>
+<li class=""><strong>Peer Observation</strong>: Colleagues observing and providing feedback</li>
+<li class=""><strong>Reflective Practice</strong>: Regular self-assessment</li>
+<li class=""><strong>Professional Learning Communities</strong>: Collaboration with other educators</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting-common-issues">Troubleshooting Common Issues<a href="#troubleshooting-common-issues" class="hash-link" aria-label="Direct link to Troubleshooting Common Issues" title="Direct link to Troubleshooting Common Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-problems">Technical Problems<a href="#technical-problems" class="hash-link" aria-label="Direct link to Technical Problems" title="Direct link to Technical Problems" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Installation Issues</strong>: Common software installation problems</li>
+<li class=""><strong>Network Problems</strong>: Connectivity issues with robots</li>
+<li class=""><strong>Hardware Failures</strong>: Backup plans for equipment problems</li>
+<li class=""><strong>Performance Issues</strong>: Optimization strategies for slow systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-difficulties">Learning Difficulties<a href="#learning-difficulties" class="hash-link" aria-label="Direct link to Learning Difficulties" title="Direct link to Learning Difficulties" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Conceptual Barriers</strong>: Students struggling with complex concepts</li>
+<li class=""><strong>Programming Challenges</strong>: Students with weak programming backgrounds</li>
+<li class=""><strong>Mathematical Deficits</strong>: Students lacking required mathematical background</li>
+<li class=""><strong>Motivation Issues</strong>: Students losing interest or engagement</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="administrative-challenges">Administrative Challenges<a href="#administrative-challenges" class="hash-link" aria-label="Direct link to Administrative Challenges" title="Direct link to Administrative Challenges" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Room Changes</strong>: Last-minute schedule changes</li>
+<li class=""><strong>Equipment Delays</strong>: Missing or delayed equipment</li>
+<li class=""><strong>Enrollment Changes</strong>: Students joining or leaving course</li>
+<li class=""><strong>Schedule Conflicts</strong>: Conflicting university events</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-evaluation-and-improvement">Course Evaluation and Improvement<a href="#course-evaluation-and-improvement" class="hash-link" aria-label="Direct link to Course Evaluation and Improvement" title="Direct link to Course Evaluation and Improvement" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-collection">Data Collection<a href="#data-collection" class="hash-link" aria-label="Direct link to Data Collection" title="Direct link to Data Collection" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Student Surveys</strong>: Regular feedback on course components</li>
+<li class=""><strong>Performance Data</strong>: Analysis of student achievement</li>
+<li class=""><strong>Employer Feedback</strong>: Input from industry partners</li>
+<li class=""><strong>Alumni Tracking</strong>: Long-term impact on careers</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="continuous-improvement">Continuous Improvement<a href="#continuous-improvement" class="hash-link" aria-label="Direct link to Continuous Improvement" title="Direct link to Continuous Improvement" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Curriculum Updates</strong>: Regular revision of content</li>
+<li class=""><strong>Technology Integration</strong>: Adoption of new tools and techniques</li>
+<li class=""><strong>Assessment Refinement</strong>: Improving evaluation methods</li>
+<li class=""><strong>Pedagogical Innovation</strong>: Trying new teaching approaches</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-and-ethics">Safety and Ethics<a href="#safety-and-ethics" class="hash-link" aria-label="Direct link to Safety and Ethics" title="Direct link to Safety and Ethics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="laboratory-safety">Laboratory Safety<a href="#laboratory-safety" class="hash-link" aria-label="Direct link to Laboratory Safety" title="Direct link to Laboratory Safety" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Equipment Safety</strong>: Proper handling of hardware</li>
+<li class=""><strong>Electrical Safety</strong>: Safe use of electronics and power</li>
+<li class=""><strong>Emergency Procedures</strong>: Clear protocols for incidents</li>
+<li class=""><strong>Personal Protective Equipment</strong>: Required safety gear</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ethical-considerations">Ethical Considerations<a href="#ethical-considerations" class="hash-link" aria-label="Direct link to Ethical Considerations" title="Direct link to Ethical Considerations" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Privacy</strong>: Protection of student data and privacy</li>
+<li class=""><strong>Bias</strong>: Awareness of bias in AI systems</li>
+<li class=""><strong>Responsibility</strong>: Ethical use of robotics technology</li>
+<li class=""><strong>Impact</strong>: Consideration of societal implications</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resources-and-references">Resources and References<a href="#resources-and-references" class="hash-link" aria-label="Direct link to Resources and References" title="Direct link to Resources and References" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="textbooks-and-readings">Textbooks and Readings<a href="#textbooks-and-readings" class="hash-link" aria-label="Direct link to Textbooks and Readings" title="Direct link to Textbooks and Readings" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Primary Text</strong>: Course textbook and supplementary readings</li>
+<li class=""><strong>Research Papers</strong>: Current research in robotics and AI</li>
+<li class=""><strong>Online Resources</strong>: Links to tutorials and documentation</li>
+<li class=""><strong>Industry Reports</strong>: Market trends and applications</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="software-and-tools">Software and Tools<a href="#software-and-tools" class="hash-link" aria-label="Direct link to Software and Tools" title="Direct link to Software and Tools" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Development Environment</strong>: Required software installations</li>
+<li class=""><strong>Simulation Tools</strong>: Gazebo, Unity, and other simulators</li>
+<li class=""><strong>AI Frameworks</strong>: PyTorch, TensorFlow, and robotics libraries</li>
+<li class=""><strong>Version Control</strong>: Git and collaborative development tools</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-and-equipment">Hardware and Equipment<a href="#hardware-and-equipment" class="hash-link" aria-label="Direct link to Hardware and Equipment" title="Direct link to Hardware and Equipment" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Robot Platforms</strong>: Recommended robot hardware</li>
+<li class=""><strong>Sensors</strong>: Required sensors and accessories</li>
+<li class=""><strong>Computing</strong>: Recommended computer specifications</li>
+<li class=""><strong>Networking</strong>: Required network infrastructure</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
+<p>This instructor&#x27;s guide provides a comprehensive framework for delivering the Physical AI &amp; Humanoid Robotics course. The key to success is balancing theoretical understanding with practical implementation, providing students with both the knowledge and skills needed to contribute to the field of embodied AI.</p>
+<p>Regular reflection on student feedback, staying current with technological developments, and continuous improvement of pedagogical approaches will ensure the course remains relevant and effective for preparing students for careers in robotics and AI.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<p>Continue with <a class="" href="/Book-ai-native/docs/curriculum/prerequisites">Prerequisites Documentation</a> to explore the specific background knowledge and skills students need before beginning this course.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
+<p>[All sources will be cited in the References section at the end of the book, following APA format]</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/Malaikaali2/Book-ai-native/tree/main/docs/curriculum/instructors-guide.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Book-ai-native/docs/curriculum/assessment-rubrics"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Assessment Rubrics: Physical AI &amp; Humanoid Robotics Course</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Book-ai-native/docs/curriculum/prerequisites"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Prerequisites: Physical AI &amp; Humanoid Robotics Course</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#course-overview" class="table-of-contents__link toc-highlight">Course Overview</a><ul><li><a href="#course-information" class="table-of-contents__link toc-highlight">Course Information</a></li><li><a href="#course-philosophy" class="table-of-contents__link toc-highlight">Course Philosophy</a></li><li><a href="#learning-approach" class="table-of-contents__link toc-highlight">Learning Approach</a></li></ul></li><li><a href="#instructor-preparation" class="table-of-contents__link toc-highlight">Instructor Preparation</a><ul><li><a href="#prerequisites-for-instructors" class="table-of-contents__link toc-highlight">Prerequisites for Instructors</a></li><li><a href="#pre-course-setup" class="table-of-contents__link toc-highlight">Pre-Course Setup</a></li><li><a href="#required-resources" class="table-of-contents__link toc-highlight">Required Resources</a></li></ul></li><li><a href="#weekly-teaching-schedule" class="table-of-contents__link toc-highlight">Weekly Teaching Schedule</a><ul><li><a href="#typical-weekly-structure" class="table-of-contents__link toc-highlight">Typical Weekly Structure</a></li><li><a href="#week-1-ros-2-fundamentals-and-architecture" class="table-of-contents__link toc-highlight">Week 1: ROS 2 Fundamentals and Architecture</a></li><li><a href="#week-2-advanced-ros-2-concepts-and-navigation" class="table-of-contents__link toc-highlight">Week 2: Advanced ROS 2 Concepts and Navigation</a></li><li><a href="#week-3-sensor-fusion-and-system-debugging" class="table-of-contents__link toc-highlight">Week 3: Sensor Fusion and System Debugging</a></li><li><a href="#week-4-gazebo-simulation-and-physics-modeling" class="table-of-contents__link toc-highlight">Week 4: Gazebo Simulation and Physics Modeling</a></li><li><a href="#week-5-advanced-simulation-and-reality-transfer" class="table-of-contents__link toc-highlight">Week 5: Advanced Simulation and Reality Transfer</a></li><li><a href="#week-6-nvidia-isaac-platform-and-perception-pipelines" class="table-of-contents__link toc-highlight">Week 6: NVIDIA Isaac Platform and Perception Pipelines</a></li><li><a href="#week-7-neural-network-optimization-and-path-planning" class="table-of-contents__link toc-highlight">Week 7: Neural Network Optimization and Path Planning</a></li><li><a href="#week-8-manipulation-control-and-gpu-optimization" class="table-of-contents__link toc-highlight">Week 8: Manipulation Control and GPU Optimization</a></li><li><a href="#week-9-isaac-perception-system-integration" class="table-of-contents__link toc-highlight">Week 9: Isaac Perception System Integration</a></li><li><a href="#week-10-multimodal-embeddings-and-instruction-following" class="table-of-contents__link toc-highlight">Week 10: Multimodal Embeddings and Instruction Following</a></li><li><a href="#week-11-embodied-language-models-and-action-grounding" class="table-of-contents__link toc-highlight">Week 11: Embodied Language Models and Action Grounding</a></li><li><a href="#week-12-voice-command-interpretation-and-nlp-mapping" class="table-of-contents__link toc-highlight">Week 12: Voice Command Interpretation and NLP Mapping</a></li><li><a href="#week-13-capstone-integration-and-evaluation" class="table-of-contents__link toc-highlight">Week 13: Capstone Integration and Evaluation</a></li></ul></li><li><a href="#classroom-management-strategies" class="table-of-contents__link toc-highlight">Classroom Management Strategies</a><ul><li><a href="#active-learning-techniques" class="table-of-contents__link toc-highlight">Active Learning Techniques</a></li><li><a href="#group-formation" class="table-of-contents__link toc-highlight">Group Formation</a></li><li><a href="#engagement-strategies" class="table-of-contents__link toc-highlight">Engagement Strategies</a></li></ul></li><li><a href="#assessment-strategies" class="table-of-contents__link toc-highlight">Assessment Strategies</a><ul><li><a href="#formative-assessment" class="table-of-contents__link toc-highlight">Formative Assessment</a></li><li><a href="#summative-assessment" class="table-of-contents__link toc-highlight">Summative Assessment</a></li><li><a href="#authentic-assessment" class="table-of-contents__link toc-highlight">Authentic Assessment</a></li></ul></li><li><a href="#student-support-strategies" class="table-of-contents__link toc-highlight">Student Support Strategies</a><ul><li><a href="#differentiated-instruction" class="table-of-contents__link toc-highlight">Differentiated Instruction</a></li><li><a href="#scaffolding-techniques" class="table-of-contents__link toc-highlight">Scaffolding Techniques</a></li><li><a href="#remediation-strategies" class="table-of-contents__link toc-highlight">Remediation Strategies</a></li></ul></li><li><a href="#technology-integration" class="table-of-contents__link toc-highlight">Technology Integration</a><ul><li><a href="#online-components" class="table-of-contents__link toc-highlight">Online Components</a></li><li><a href="#hardware-integration" class="table-of-contents__link toc-highlight">Hardware Integration</a></li><li><a href="#accessibility-considerations" class="table-of-contents__link toc-highlight">Accessibility Considerations</a></li></ul></li><li><a href="#assessment-and-grading" class="table-of-contents__link toc-highlight">Assessment and Grading</a><ul><li><a href="#rubric-development" class="table-of-contents__link toc-highlight">Rubric Development</a></li><li><a href="#feedback-strategies" class="table-of-contents__link toc-highlight">Feedback Strategies</a></li><li><a href="#grade-calculation" class="table-of-contents__link toc-highlight">Grade Calculation</a></li></ul></li><li><a href="#course-logistics" class="table-of-contents__link toc-highlight">Course Logistics</a><ul><li><a href="#schedule-management" class="table-of-contents__link toc-highlight">Schedule Management</a></li><li><a href="#resource-management" class="table-of-contents__link toc-highlight">Resource Management</a></li><li><a href="#communication-protocols" class="table-of-contents__link toc-highlight">Communication Protocols</a></li></ul></li><li><a href="#professional-development" class="table-of-contents__link toc-highlight">Professional Development</a><ul><li><a href="#staying-current" class="table-of-contents__link toc-highlight">Staying Current</a></li><li><a href="#teaching-improvement" class="table-of-contents__link toc-highlight">Teaching Improvement</a></li></ul></li><li><a href="#troubleshooting-common-issues" class="table-of-contents__link toc-highlight">Troubleshooting Common Issues</a><ul><li><a href="#technical-problems" class="table-of-contents__link toc-highlight">Technical Problems</a></li><li><a href="#learning-difficulties" class="table-of-contents__link toc-highlight">Learning Difficulties</a></li><li><a href="#administrative-challenges" class="table-of-contents__link toc-highlight">Administrative Challenges</a></li></ul></li><li><a href="#course-evaluation-and-improvement" class="table-of-contents__link toc-highlight">Course Evaluation and Improvement</a><ul><li><a href="#data-collection" class="table-of-contents__link toc-highlight">Data Collection</a></li><li><a href="#continuous-improvement" class="table-of-contents__link toc-highlight">Continuous Improvement</a></li></ul></li><li><a href="#safety-and-ethics" class="table-of-contents__link toc-highlight">Safety and Ethics</a><ul><li><a href="#laboratory-safety" class="table-of-contents__link toc-highlight">Laboratory Safety</a></li><li><a href="#ethical-considerations" class="table-of-contents__link toc-highlight">Ethical Considerations</a></li></ul></li><li><a href="#resources-and-references" class="table-of-contents__link toc-highlight">Resources and References</a><ul><li><a href="#textbooks-and-readings" class="table-of-contents__link toc-highlight">Textbooks and Readings</a></li><li><a href="#software-and-tools" class="table-of-contents__link toc-highlight">Software and Tools</a></li><li><a href="#hardware-and-equipment" class="table-of-contents__link toc-highlight">Hardware and Equipment</a></li></ul></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Content</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Book-ai-native/docs/intro">Introduction</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics Book. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
